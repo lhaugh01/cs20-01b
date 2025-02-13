@@ -1,30 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Header Background Image</title>
-    <style>
-        header {
-            background-image: url('skarner_smart.jpg'); 
-            background-size: cover; 
-            background-position: center;
-            background-repeat: no-repeat;
-            height: 300px; 
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            text-align: center;
-            font-size: 2em;
-        }
-    </style>
+<style>
+    .image-text-wrap {
+      display: flex;
+      align-items: flex-start;
+      gap: 15px; /* Space between image and text */
+    }
+    .image-text-wrap img {
+      width: 300px; /* Adjust image size */
+      height: auto; /* Maintain aspect ratio */
+      border-radius: 8px; /* Optional: Rounded edges */
+    }
+    .image-text-wrap p {
+      flex: 1; /* Ensures text takes up remaining space */
+    }
+    .clear {
+      clear: both; /* Stops text wrapping around the floated image */
+    }
+  </style>
 </head>
 <body>
 <h1> Lance H </h1>
 <h2>Computer Science</h2>
 <p>130.64.64.34</p>
 <p>Oakland California</p>
+<div class="image-text-wrap">
+<img src = braden-jarvis-prSogOoFmkw-unsplash.jpg style="width: 300px; height: auto; border-radius: 8px;">
+<p>My favorite place is Kauai because it is where half of my family lives and it has a really nice community and weather.</p>
+</div>
 <div class="clear">
 <p> My favorite 
 <a href="https://www.yoshis.net/" target="restaurant">restaurant</a>
